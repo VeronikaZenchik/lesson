@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 0.01em;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  min-width: 375px;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  background: #eff2f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 1170px;
+  min-height: 800px;
+  padding: 60px 0 70px;
+  box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
+  background: #fff;
+  display: flex;
+}
+
+.product-img-block {
+  border-right: 2px solid rgba(20, 20, 20, 0.15);
+  min-width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-img-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.product-img-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.preview {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.selected, 
+.preview:hover {
+  box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
+}
+
+.product-info-block {
+  padding: 0 60px;
+}
+
+.main-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  color: rgba(20, 20, 20, 0.9);
+  margin-bottom: 5px;
+  }
+
+.subtitle{
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: rgba(20, 20, 20, 0.4);
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(20, 20, 20, 0.7);
+  margin: 60px 0 65px;
+}
+
+.title {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(20, 20, 20, 0.4);
+  margin-bottom: 20px;
+}
+
+.colors {
+  margin-bottom: 65px;
+}
+
+.color-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 4px rgba(81, 91, 117, 0.25));
+}
+
+.blue {
+  background-color: #013c7d;
+}
+
+.green {
+  background-color: #63cba7;
+}
+
+.red {
+  background-color: #d52f29;
+}
+
+.black {
+  background-color: #141414;
+}
+
+.yellow {
+  background-color: #f2c723;
+}
+
+.color-items > li {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  fill: #fff;
+  padding: 7px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.color-items > li:hover, 
+.color-items > li.selected {
+  box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper > div {
+  flex-grow: 1;
+}
+
+.quantity {
+  width: 80px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(20, 20, 20, 0.8);
+  font-family: "Rubik", sans-serif;
+  appearance: none;
+  background-image: url('./assets/images/Vector.svg');
+  background-repeat: no-repeat;
+  background-position: right 0 top 50%;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(20, 20, 20, 0.8);
+}
+
+.btn {
+  width: 100%;
+  height: 70px;
+  background: #141414;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 75px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+}
+
+/* для планшетов */
+
+@media screen and (max-width:1440px) {
+  .card {
+    
+    flex-direction: column;
+    margin: 40px;
+  }
+  .product-img-block {
+    border-bottom: 2px solid rgba(20, 20, 20, 0.15);
+    border-right: none;
+  }
+
+.product-img-wrapper {
+  margin: 60px 0 70px;
+}
+  
+  .product-info-block {
+    padding: 60px 60px 0;
+  }
+}
+
+/* для телефонов */
+
+@media screen and (max-width: 576px){
+  .card {
+    margin: 15px 15px 40px;
+    padding-bottom: 60px;
+  }
+
+  .product-img-block {
+    min-width: auto;
+  }
+
+  .main-img-wrapper img {
+    width: 250px;
+  }
+
+  .main-title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .text {
+    margin: 50px 0 55px;
+    font-size: 16px;
+  }
+
+  .product-info-block {
+    padding: 20px 60px 0;
+  }
+
+  .btn {
+    margin-top: 65px;
+  }
+}
+
+
