@@ -1,6 +1,7 @@
 // ЭКЗАМЕН ПЕРВЫЙ ПО js
 
 // let y = 10
+
 // if (true) {
 //   let y = 100
 //   console.log(y)
@@ -25,4 +26,6 @@
 
 // let energy = 5
 // let name = "Robo"
-// let message = name + " имеет " + energy + " единиц энергии"
+// let message = `${name} имеет ${energy} единиц энергии`
+
+// console.log(message)
