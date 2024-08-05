@@ -39,6 +39,6 @@ function increaseResource(currentValue, increment = 100) {
 }
 
 gold = increaseResource (gold)
-alert(gold)
+// alert(gold)
 
 createBuilding("Palace", 300)
