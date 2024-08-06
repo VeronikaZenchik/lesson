@@ -19,4 +19,4 @@
 // let isLoggedIn = true
 // const status = XXX
 
-// status = isLoggedIn ? 'активный' : 'неактивный'
+// isLoggedIn ? 'активный' : 'неактивный'

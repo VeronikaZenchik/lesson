@@ -20,16 +20,20 @@ function greet(XXX) {
 // В ответе должна быть использована функция getWelcomeMessage
 
 
-const message = `Сообщение дня: XXX`
-console.log(message)
-function getWelcomeMessage(name) {
-  return `Привет, ${name}!`
-}
+// const message = `Сообщение дня: XXX`
+// console.log(message)
+// function getWelcomeMessage(name) {
+//   return `Привет, ${name}!`
+// }
 
+// const message = `Сообщение дня: ${getWelcomeMessage("Аня")}`
+// console.log(message)
+// function getWelcomeMessage(name) {
+//   return `Привет, ${name}!`
+// }
 
-// Твой ответ:
-// getWelcomeMessage
-
+// Твой ответ:!!!!
+// ${getWelcomeMessage("Аня")}
 
 // Вопрос:
 // В данном коде допущена ошибка (ожидается, что в переменную sum будет записана сумма чисел, переданных в функцию addNumbers).
@@ -38,9 +42,10 @@ function getWelcomeMessage(name) {
 
 function addNumbers(a, b) {
   let result = a + b
+  return result
 }
 const sum = addNumbers(100, 20)
 
+// ответ: !!!!
+return result
 
-// Твой ответ:
-// console.log
