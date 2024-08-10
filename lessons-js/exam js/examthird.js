@@ -11,7 +11,7 @@ function greet(XXX) {
 
 
 // Твой ответ:
-// name
+// name = 'гость'
 
 
 
@@ -40,12 +40,12 @@ function greet(XXX) {
 // Необходимо добавить строку кода. Укажие эту строку кода в ответе
 
 
-function addNumbers(a, b) {
-  let result = a + b
-  return result
-}
-const sum = addNumbers(100, 20)
+// function addNumbers(a, b) {
+//   let result = a + b
+//   return result
+// }
+// const sum = addNumbers(100, 20)
 
-// ответ: !!!!
-return result
+// // ответ: !!!!
+// return result
 
