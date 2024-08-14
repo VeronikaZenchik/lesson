@@ -1,20 +1,22 @@
-// cars:
+const dog = {
+  name: "Fido",
+  weight: 20.2,
+  age: 4,
+  breed: "mixed",
+  activity: "fetch balls"
+}
 
-//make: "Chevy",
-// model: "Bel Air",
-// year: 1957,
-// color: "red",
-// passengers: 2,
-// convertiblr: false,
-// mileage: 1021
+console.log(dog.name);  //выводим в консоль какое-то значение
 
-// dog:
+dog.weight = 24 // меняем в объекте значение
 
-// name: "Fido",
-// weight: 20.2,
-// age: 4,
-// breed: "mixed",
-// activity: "fetch balls"
+dog.isDog = true //добавляем новый ключ и значение в наш объект
+
+delete dog.activity // удаляем свойство из объекта
+
+console.log(dog);
+
+
 
 
 const car = {
@@ -27,10 +29,8 @@ const car = {
   mileage: 1021
 }
 
-const dog = {
-  name: "Fido",
-  weight: 20.2,
-  age: 4,
-  breed: "mixed",
-  activity: "fetch balls"
-  }
+if(car.mileage < 50000) {
+  alert('Покупаем!!!')
+} else {
+  alert('Не покупаем!!!')
+}
