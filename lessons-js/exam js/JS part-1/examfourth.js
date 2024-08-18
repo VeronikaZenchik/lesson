@@ -18,7 +18,7 @@
 
 function findElementIndex(array, element) {
   const index = array.indexOf(element);
-  if (index === array) {
+  if (index === -1) {
     return 'элемент не найден'
   } else {
     return {index
