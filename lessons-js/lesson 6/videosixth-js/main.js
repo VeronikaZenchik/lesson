@@ -1,8 +1,6 @@
 window.addEventListener("load", function () { //запустить после загрузки старницы, если мы добавим скрипт в хэд
   
 
-
-
 const title = document.getElementById("course-title") // поиск в документе по id, если единичный элемент
 console.log(title);
 
@@ -46,7 +44,7 @@ button.style.backgroundColor = "lightblue"
 
 button.addEventListener("click", function(){
   const items = document.querySelectorAll(".item")
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < items.length; i++) {
     items[i].style.color =  getRandomColor()
   }
 })
