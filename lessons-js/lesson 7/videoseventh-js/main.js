@@ -42,5 +42,46 @@ console.log(typeof c);
 console.log(5 + '5');
 
 
+//Строгое и нестрогое сравнение
+
+const f = 5;
+const g = '5'
+
+console.log(f == g); // true
+console.log(f === g); // false
+
+// === - перве два равно сравнивают значения, а третье раввно он сравнивает тип значения!
+
+// Нестрогое сравнение (==)
+
+console.log(null == undefined); //true при нестрогом сравнении
+
+let obj1 = {name: 'Alice'}
+let obj2 = {name: 'Alice'}
+
+console.log(obj1 == obj2); // false
+
+// в ссылочном типк данном сравнивает ссылки, также и с массивами
+
+
+let obj3 = {name: 'Alice'}
+let obj4 = obj3
+
+console.log(obj3 == obj4);  //true
+
+
+
+console.log('5' > 3); //true // браузер преобразовывает строчку в число
+
+
+const sum = 2 + '2' //22 произойдет контетанация
+
+const multifly = 3 * '4'
+console.log(multifly); // 12
+
+// если умножть делить, то переводит в число
+
+
+
 
 
