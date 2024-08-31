@@ -152,8 +152,19 @@ console.log(convertArrayToUpperCase(arrayUpper));
 console.log(arrayUpper.length);
 
 
-// Напишите функции findCharacterindex, которая принимает строку и символ, и возращает индекс первого вхождения этого символа в строку. 
+// Напишите функции findCharacterindex, которая принимает строку и символ, и возращает индекс первого вхождения этого символа в строку. Если симмвол не найден, то -1
+
+const findCharacterindex = (string, symbol) => {
+  return string.indexOf(symbol)
+}
+
+console.log(findCharacterindex('hello', 'e')); // 1
+console.log(findCharacterindex('hello', 'a')); // -1
 
 
+const array5 = [1, 2, 3, 4, 5, 6, 7]
+const spliced = array5.splice(5,2, 66, 77)
+console.log(array5);
+console.log(spliced);
 
 
