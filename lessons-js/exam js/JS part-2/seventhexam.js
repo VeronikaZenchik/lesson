@@ -78,5 +78,5 @@ const isEqual = typeof [] === XXX //При использовании опера
 "object"
 
 
-isEqual = typeof (typeof 1) === XXX //вызываем `typeof "number"`.
+isEqual = typeof (typeof 1) === XXX 
 "string"
