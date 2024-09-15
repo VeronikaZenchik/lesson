@@ -6,7 +6,7 @@
 
 4. document.getElementById('rain-button')
 
-5. menuItem.classList.add('sctive')
+5. menuItem.classList.add('active')
 
 6. infoBox.style.backgroundColor
 
