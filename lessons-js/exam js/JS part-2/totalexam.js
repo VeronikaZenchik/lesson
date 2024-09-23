@@ -18,5 +18,9 @@ console.log(studyTimer);
 // studyTimer.hoursSpent = studyTimer.hoursSpent + hours
 
 
-// Верный ответ:
-return this.hoursSpent = this.hoursSpent + hours;
+// Твой ответ:
+// return this.hoursSpent = this.hoursSpent + hours; // неверно
+
+
+// попробовать этот вариант:
+this.hoursSpent += hours;
